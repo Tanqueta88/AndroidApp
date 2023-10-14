@@ -9,21 +9,25 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-/*        val sumar = ClaseSuma() //Se crea la variable sumar y una nueva instacia
+/*  EJERCICIO NUMEROS PARES IMPARES
+        val sumar = ClaseSuma() //Se crea la variable sumar y una nueva instacia
 
         val esPar = sumar.checkResulatadoPar(3,5)
 
         if (!esPar) Toast.makeText(this, "Resultado impar", Toast.LENGTH_SHORT).show() //Encierra el mensaje en una variable en un toast, este es resultado de un condicional
         else Toast.makeText(this, "Resultado Par", Toast.LENGTH_SHORT).show()*/
 
-        val numeros = Numeros(3,5)
+        val numeros = Numeros(3,11)
 
         //Se crea una instancia de la clase  y se pasan los valores
-        val operaciones = Operaciones()
+        val resultados = Resultados()
 
-        val result = operaciones.sumar(numeros)
-        Toast.makeText(this, result.toString(),Toast.LENGTH_LONG).show()
+        val result = resultados.sumar(numeros)
+        //Toast.makeText(this, result.toString(),Toast.LENGTH_LONG).show()
 
-
+        val numero2 = Numeros(15,10)
+        val resultPlus10 = ResultadoPlus10()
+        val resltPlus10 = resultPlus10.restar(numero2)
+        Toast.makeText(this, resltPlus10.toString(),Toast.LENGTH_LONG).show()
     }
 }

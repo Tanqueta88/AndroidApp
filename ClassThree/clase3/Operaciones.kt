@@ -1,7 +1,7 @@
 package com.example.clase3
 
 class Operaciones {
-    fun sumar(numeros: Numeros): Int{               
+    fun sumar(numeros: Numeros): Int{
         return numeros.numero1 + numeros.numero2
     }
 
